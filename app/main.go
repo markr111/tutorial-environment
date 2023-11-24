@@ -102,7 +102,7 @@ type Link struct {
 func new(logger log.Logger, databases []*url.URL) (*app, error) {
 	c := client.New(logger)
 
-	tmpl, err := template.ParseFiles("/index.html.tmpl")
+	tmpl, err := template.ParseFiles("./index.html.tmpl")
 	if err != nil {
 		return nil, err
 	}
